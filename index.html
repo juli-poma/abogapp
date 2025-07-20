@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abogapp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#6d4c41', // Brown 700
+              'primary-dark': '#5d4037', // Brown 800
+              'secondary': '#a1887f', // Brown 300
+              'accent': '#ffb74d', // Amber 400
+              'background': '#fdf8f0', // Very light cream
+              'surface': '#fffcf7', // Off-white
+              'text-primary': '#4e342e', // Brown 900
+              'text-secondary': '#795548', // Brown 500
+              'on-primary': '#fffcf7',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.10.0"
+  }
+}
+</script>
+<!-- Load Babel -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background">
+    <div id="root"></div>
+    <script type="text/babel" data-type="module" src="/index.jsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
